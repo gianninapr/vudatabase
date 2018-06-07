@@ -3,3 +3,7 @@ Archive/Archive/wsgi.py
 Archive/Archive/__pycache__
 Archive/stars/migrations/*
 Archive/db.sqlite3
+Archive/.DS_Store
+.gitignore
+.DS_Store
+__pychache__.DS_Store
