@@ -6,7 +6,12 @@ Archive/db.sqlite3
 Archive/.DS_Store
 .gitignore
 .DS_Store
+<<<<<<< HEAD
 Archive/Archive/__init__.py
 Archive/stars/__pycache__
 Archive/stars/__init__.py
 Archive/sarts/.DS_Store
+=======
+__pychache__.DS_Store
+>>>>>>> 3472b3f74e5ead462232c7e2a75b322ed2f7249c
+.DS_Store
