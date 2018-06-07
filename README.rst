@@ -17,3 +17,21 @@ This was my first coding project therefore there are a few things that need to b
 
 Example Images and Database Schema
 ==================================
+
+![Database Schema](../assets/schema.png?raw=true)
+
+------------------------------------------------
+
+![Data Entry UI](../assets/UI.png?raw=true)
+
+------------------------------------------------
+
+![Catalog UI](../assets/catalog.png?raw=true)
+
+------------------------------------------------
+
+![Typical Card from the Original Catalog](../assets/card.png?raw=true)
+
+
+
+
