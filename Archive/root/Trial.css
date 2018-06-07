@@ -1,0 +1,67 @@
+
+h1 {
+  background-image: url(https://www.ljmu.ac.uk/~/media/ljmu/news/starsedit.jpg);
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  color: white;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  top: 20%;
+  }
+
+h2 {
+  background-image: url(https://www.ljmu.ac.uk/~/media/ljmu/news/starsedit.jpg);
+  float: right;
+  display: block;
+  max-height: 300px;
+  font-size: 30px
+  margin-top: 100px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+  }
+  
+ol {
+  margin-left: 20px;
+  padding: 0;
+  width: 50%;
+  font-size: 20px;
+  }
+
+li {
+  color: #cb9ed8
+    }
+  
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: black;
+  position: relative;
+  text-align: left;
+  /*border: 1px solid red;*/ 
+  width: 900px;
+  }
+  
+a {
+  color: #cb9ed8;
+  font-size: 16px;
+  }
+
+h5 {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  }
+  
+footer {
+  background-image: url(https://www.ljmu.ac.uk/~/media/ljmu/news/starsedit.jpg);
+  display: block;
+  width: 750px;
+  border: solid 2px black;
+  border-radius: 2px;
+  }
+  

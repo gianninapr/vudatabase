@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+
+<head>
+	{% load static %}
+	<link rel="stlyesheet" href="{% static 'base_style.css' %}">
+	<title> VU Cards </title>
+</head>
+
+<div class= "siteheader">
+
+<h1> Villanova University's EB Card Catalog</h1>
+
+</div>
+
+<h1> {{star.name}} </h1>
+
+<div class= "RADEC" >
+
+<h3> 
+	<p> Right Ascension: </h3> {{star.RA.hours}} h {{star.RA.minutes}} m {{star.RA.seconds}} s </p>
+<h3>	
+	<p> Declination: </h3> {{star.DEC.degrees}} &deg; {{star.DEC.arcminutes}} ' {{star.DEC.arcseconds}} '' </p>
+	
+{% if star.ep.epoch %}
+<h3>
+	<p> Epoch: </h3> {{star.ep.epoch }} </p>
+{% endif %}
+
+</div>
+
+<h3> Aliases: </h3>
+
+<p>	{% for aliases in star.ali.all %}
+	
+{{ aliases }}, &nbsp;
+
+{% endfor %}
+
+<br> <small> <i> (All aliases are queried through Simbad) </i> </small> </br>
+
+</p>
+
+{% if star.gc.lam %} <!-- not likely that there will be a lambda without a beta but keep this in watch just in case -->
+
+<h3> Galactic Coordinates: </h3>
+<ul>
+	<li> Longitude (&#8467): {{star.gc.lam}} &deg; </li>
+	<li> Latitude (b): {{star.gc.beta}} &deg; </li>
+</ul>
+{% endif %}
+
+<h3> References Found Online: </h3>
+
+{% for URL in star.ADSURL.all %}
+
+<ul>
+	<li> <a href = "{{ URL }}" target = "blank" > {{ URL }} </a> </li>
+</ul>
+
+{% empty %}
+
+<p> No references found online </p>
+
+{% endfor %}
+
+<h3> References Not Found Online: </h3>
+
+{% for Ref in star.REF.all %}
+
+<p> {{ Ref }} <br> </p> 
+
+{% empty %}
+
+<p> All references were found online, or card contains no references </p>
+
+{% endfor %}
+
+{% if star.ann.all %}
+
+<h3> Annotations: </h3>
+
+{% for annotations in star.ann.all %}
+
+<p> {{ annotations }} </p> <br>
+
+{% endfor %}
+
+{% endif %}
+
+<h3> Card Images: </h3>
+
+{% for image in star.images.all %}
+
+<img src="/media/{{ image }}" height = "342" width = "442" />
+
+{% endfor %}
+
+
+<footer>
+
+If you observe anything in the card that might have been missed during the data-entry process,
+ anything mislabeled, or anything that could be further explained in the annotations then 
+ <a href = "{% url 'email' %}" target = "blank" > send us an email! </a>
+ 
+ </footer>
+
+
