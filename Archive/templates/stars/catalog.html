@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+
+<head>
+	{% load static %}
+	<link rel="stlyesheet" type="text/css" href="{% static 'catalog.css' %}">
+	<title> VU Cards </title>
+</head>
+
+<body> 
+
+
+<h1 class = "siteheader"> Villanova University's EB Card Catalog</h1>
+
+
+<div class="cataloglist">
+
+    <h2> Showing {{entries|length}} cards out of {{entry_list|length}} </h2>
+        <div class="stars">
+        <table width="50%" border= 1 align= "center">
+        	<tr>
+        		<th>Star</th>
+        		<th> RA </th>
+        		<th> DEC </th>
+        	</tr>
+        	{% for name in entries %}
+        	<tr>
+        		<td align= "center"> <a href= "{% url 'stars:detail' pk=name.id %}"> {{name}} </a> </td>
+        		<td align= "center"> {{name.RA.hours}} h {{name.RA.minutes}} m {{name.RA.seconds}} s </td>
+        		<td align= "center"> {{name.DEC.degrees}} &deg; {{name.DEC.arcminutes}} ' {{name.DEC.arcseconds}} '' </td>
+        	</tr>
+        	{% endfor %}
+        </table>
+        </div>
+    
+</div>
+
+<div class="pagination">
+    <span class="step-links">
+        {% if entries.has_previous %}
+            <a href="?page={{ entries.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ entries.number }} of {{ entries.paginator.num_pages }}
+        </span>
+
+        {% if entries.has_next %}
+            <a href="?page={{ entries.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+    
+</div>
+  
+</body>
+
+</html>

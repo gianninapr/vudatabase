@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | Villanova's Astronomy Department Archive {% endblock %}
+
+{% block extrastyle %} <style> #header {background-color: #211B60; color: white !important;
+}
+.module h2, .module caption, .inline-group h2 {
+font-size: 18px; color: white !important;
+background: #211B60 !important; }
+
+</style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Villanova's Astronomy Department Archive</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

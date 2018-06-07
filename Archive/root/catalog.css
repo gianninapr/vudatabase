@@ -1,0 +1,15 @@
+
+.siteheader
+	{
+	background-color: purple;
+	color: white;
+	padding: 5px;
+	}
+
+.cataloglist {
+	h2 {
+		background-color: thistle
+		color: white;
+		font-size: 11pt;
+		}
+	

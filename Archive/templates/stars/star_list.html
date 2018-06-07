@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% extends "admin/base_site.html" %}
+
+{% block extrastyle %}
+  <style> 
+    .breadcrumbs {background-color: #211B60 !important; 
+      }
+  </style> 
+{% endblock extrastyle %}
+
+{% block content %}
+	<title> Villanova's Astronomy Department Archive </title>
+    <h2>Stars</h2>
+    <ul>
+        {% for Star in these_are_stars %}
+            <li>{{ Star.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
