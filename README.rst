@@ -28,16 +28,16 @@ which will also be done as soon as possible. Things that need to be done:
 Example Images and Database Schema
 ==================================
 
-.. image:: /assets/schema.png
+![Database Schema](../assets/schema.png?raw=true)
 
 ------------------------------------------------
 
-.. image:: /assets/UI.png
+![Data Entry UI](../assets/UI.png?raw=true)
 
 ------------------------------------------------
 
-.. image:: /assets/catalog.png
+![Catalog UI](../assets/catalog.png?raw=true)
 
 ------------------------------------------------
 
-.. image:: /assets/card.png
+![Typical Card from the Original Catalog](../assets/card.png?raw=true)
