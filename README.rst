@@ -12,7 +12,7 @@ Most scripts contain sufficient amount of comments, but more documentation will
 be added as a per-file basis soon.
 
 Catalogue Background and the 'Why' of this Project:
-===================================================
+---------------------------------------------------
 
 "The Eclipsing Binary Card Catalog started at Princeton in the 1930s during the
 time of Henry Norris Russell. But moved to the Astronomy Dept at the University
@@ -34,7 +34,7 @@ were not found on the internet in order to make online journal query programs
 such as ADS aware of the absence of these references
 
 Things to Work On
-=================
+-----------------
 
 This was my first coding project therefore there are a few things that need to
 be cleaned in terms of static directories, and syntax needs to be normalized,
@@ -48,16 +48,20 @@ which will also be done as soon as possible. Things that need to be done:
 
 
 Example Images and Database Schema
-==================================
+----------------------------------
 
+.. figure:: ../assets/schema.png?raw=true
+   :scale: 50%
+   :alt: Database Schema
 
-![Schema](../assets/schema.png?raw=true)
+.. figure:: ../assets/UI.png?raw=true
+   :scale: 50%
+   :alt: User Interface
 
-
-![UI](../assets/UI.png?raw=true)
-
-
-![Catalog](../assets/catalog.png?raw=true)
-
-
-![Demo Animation](../assets/card.png?raw=true)
+.. figure:: ../assets/catalog.png?raw=true
+   :scale: 50%
+   :alt: Catalog
+   
+.. figure:: ../assets/card.png?raw=true
+   :scale: 50%
+   :alt: Demo Card
